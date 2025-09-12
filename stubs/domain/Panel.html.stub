@@ -1,0 +1,18 @@
+  <panel>
+
+    <div title>
+      <h2 class="text-2xl font-bold text-econo-primary-500 flex items-center gap-2">
+        Título do panel
+      </h2>
+      <p class="text-sm text-gray-500 mt-1">
+       Adicione aqui um sub-titulo
+      </p>
+    </div>
+
+    <div content>
+      ...
+
+      <button class="btn-md-secondary" type="button" (click)="panelService.close()">Fechar</button>
+    </div>
+
+  </panel>

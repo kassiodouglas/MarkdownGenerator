@@ -1,0 +1,368 @@
+<comp-breadcumb [links]="[{text:'Dev'},{text:'Buttons'},]" />
+<comp-page-title title="Buttons" text="Defina estilos e comportamentos que tornam cada clique intuitivo e eficaz." >
+  <div content class="flex justify-center w-full space-x-3 md:justify-end">
+    <button class="button-only-icon button-xs button-soft-info"><mat-icon>favorite</mat-icon></button>
+    <button class="button button-danger" disabled><mat-icon>delete</mat-icon>Remove</button>
+  </div>
+</comp-page-title>
+
+
+<div class="mx-10">
+  <!-- .button-only-icon -->
+  <section class="mb-16">
+    <div class="flex flex-col my-4">
+      <span class="text-xl font-bold text-gray-500 dark:text-gray-500">.button-only-icon</span>
+      <small class="text-gray-800 opacity-50 dark:text-white">Classe para botão somente com icone.</small>
+    </div>
+
+    <span class="opacity-40">xs</span>
+    <div class="grid grid-cols-12 gap-4 mb-5">
+      <button class="button-primary button-only-icon button-icon-xs">
+        <mat-icon class="text-yellow-500 scale-75">@if(isDark){bedtime}@else{sunny}</mat-icon>
+      </button>
+
+      <button class="button-warning button-only-icon button-icon-xs">
+        <mat-icon class="scale-75">favorite</mat-icon>
+      </button>
+
+      <button class="button-info button-only-icon button-icon-xs">
+        <mat-icon class="scale-75">settings</mat-icon>
+      </button>
+
+      <button class="button-success button-only-icon button-icon-xs">
+        <mat-icon class="scale-75">face_shake</mat-icon>
+      </button>
+
+      <button class="button-danger button-only-icon button-icon-xs">
+        <mat-icon class="scale-75">delete_history</mat-icon>
+      </button>
+
+      <button class="button-secondary button-only-icon button-icon-xs">
+        <mat-icon class="scale-75">cloud_off</mat-icon>
+      </button>
+
+      <button class="button-white button-only-icon button-icon-xs">
+        <mat-icon class="scale-75">mode_off_on</mat-icon>
+      </button>
+
+      <button class="button-black button-only-icon button-icon-xs">
+        <mat-icon class="scale-75">cloud_off</mat-icon>
+      </button>
+
+      <button class="button-only-icon button-icon-xs">
+        <mat-icon class="scale-75">menu</mat-icon>
+      </button>
+
+    </div>
+
+    <span class="opacity-40">sm</span>
+    <div class="grid grid-cols-12 gap-4 mb-5">
+      <button class="button-primary button-only-icon button-icon-sm">
+        <mat-icon class="text-yellow-500">@if(isDark){bedtime}@else{sunny}</mat-icon>
+      </button>
+
+      <button class="button-warning button-only-icon button-icon-sm">
+        <mat-icon>favorite</mat-icon>
+      </button>
+
+      <button class="button-info button-only-icon button-icon-sm">
+        <mat-icon>settings</mat-icon>
+      </button>
+
+      <button class="button-success button-only-icon button-icon-sm">
+        <mat-icon>face_shake</mat-icon>
+      </button>
+
+      <button class="button-danger button-only-icon button-icon-sm">
+        <mat-icon>delete_history</mat-icon>
+      </button>
+
+      <button class="button-secondary button-only-icon button-icon-sm">
+        <mat-icon>cloud_off</mat-icon>
+      </button>
+
+      <button class="button-white button-only-icon button-icon-sm">
+        <mat-icon>mode_off_on</mat-icon>
+      </button>
+
+      <button class="button-black button-only-icon button-icon-sm">
+        <mat-icon>cloud_off</mat-icon>
+      </button>
+
+      <button class="button-only-icon button-icon-sm">
+        <mat-icon>menu</mat-icon>
+      </button>
+
+    </div>
+
+    <span class="opacity-40">md</span>
+    <div class="grid grid-cols-12 gap-4 mb-5">
+      <button class="button-primary button-only-icon">
+        <mat-icon class="text-yellow-500">@if(isDark){bedtime}@else{sunny}</mat-icon>
+      </button>
+
+      <button class="button-warning button-only-icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+
+      <button class="button-info button-only-icon">
+        <mat-icon>settings</mat-icon>
+      </button>
+
+      <button class="button-success button-only-icon">
+        <mat-icon>face_shake</mat-icon>
+      </button>
+
+      <button class="button-danger button-only-icon">
+        <mat-icon>delete_history</mat-icon>
+      </button>
+
+      <button class="button-secondary button-only-icon">
+        <mat-icon>cloud_off</mat-icon>
+      </button>
+
+      <button class="button-white button-only-icon">
+        <mat-icon>mode_off_on</mat-icon>
+      </button>
+
+      <button class="button-black button-only-icon">
+        <mat-icon>cloud_off</mat-icon>
+      </button>
+
+      <button class="button-only-icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+
+    </div>
+
+    <span class="opacity-40">lg</span>
+    <div class="grid grid-cols-12 gap-4 mb-5">
+      <button class="button-primary button-only-icon button-icon-lg">
+        <mat-icon class="text-yellow-500">@if(isDark){bedtime}@else{sunny}</mat-icon>
+      </button>
+
+      <button class="button-warning button-only-icon button-icon-lg">
+        <mat-icon>favorite</mat-icon>
+      </button>
+
+      <button class="button-info button-only-icon button-icon-lg">
+        <mat-icon>settings</mat-icon>
+      </button>
+
+      <button class="button-success button-only-icon button-icon-lg">
+        <mat-icon>face_shake</mat-icon>
+      </button>
+
+      <button class="button-danger button-only-icon button-icon-lg">
+        <mat-icon>delete_history</mat-icon>
+      </button>
+
+      <button class="button-secondary button-only-icon button-icon-lg">
+        <mat-icon>cloud_off</mat-icon>
+      </button>
+
+      <button class="button-white button-only-icon button-icon-lg">
+        <mat-icon>mode_off_on</mat-icon>
+      </button>
+
+      <button class="button-black button-only-icon button-icon-lg">
+        <mat-icon>cloud_off</mat-icon>
+      </button>
+
+      <button class="button-only-icon button-icon-lg">
+        <mat-icon>menu</mat-icon>
+      </button>
+
+    </div>
+
+    <span class="opacity-40">xl</span>
+    <div class="grid grid-cols-5 gap-4 mb-5 md:grid-cols-12">
+      <button class="text-3xl button-primary button-only-icon button-icon-xl">
+        <mat-icon class="text-yellow-500 scale-125">@if(isDark){bedtime}@else{sunny}</mat-icon>
+      </button>
+
+      <button class="button-warning button-only-icon button-icon-xl">
+        <mat-icon class="scale-125">favorite</mat-icon>
+      </button>
+
+      <button class="button-info button-only-icon button-icon-xl">
+        <mat-icon class="scale-125">settings</mat-icon>
+      </button>
+
+      <button class="button-success button-only-icon button-icon-xl">
+        <mat-icon class="scale-125">face_shake</mat-icon>
+      </button>
+
+      <button class="button-danger button-only-icon button-icon-xl">
+        <mat-icon class="scale-125">delete_history</mat-icon>
+      </button>
+
+      <button class="button-secondary button-only-icon button-icon-xl">
+        <mat-icon class="scale-125">cloud_off</mat-icon>
+      </button>
+
+      <button class="button-white button-only-icon button-icon-xl">
+        <mat-icon class="scale-125">mode_off_on</mat-icon>
+      </button>
+
+      <button class="button-black button-only-icon button-icon-xl">
+        <mat-icon class="scale-125">cloud_off</mat-icon>
+      </button>
+
+      <button class="button-only-icon button-icon-xl">
+        <mat-icon class="scale-125">menu</mat-icon>
+      </button>
+
+    </div>
+
+    <span class="opacity-40">2xl</span>
+    <div class="grid grid-cols-5 gap-4 mb-5 md:grid-cols-12">
+      <button class="button-primary button-only-icon button-icon-2xl">
+        <mat-icon class="text-yellow-500 scale-150">@if(isDark){bedtime}@else{sunny}</mat-icon>
+      </button>
+
+      <button class="button-warning button-only-icon button-icon-2xl">
+        <mat-icon class="scale-150">favorite</mat-icon>
+      </button>
+
+      <button class="button-info button-only-icon button-icon-2xl">
+        <mat-icon class="scale-150">settings</mat-icon>
+      </button>
+
+      <button class="button-success button-only-icon button-icon-2xl">
+        <mat-icon class="scale-150">face_shake</mat-icon>
+      </button>
+
+      <button class="button-danger button-only-icon button-icon-2xl">
+        <mat-icon class="scale-150">delete_history</mat-icon>
+      </button>
+
+      <button class="button-secondary button-only-icon button-icon-2xl">
+        <mat-icon class="scale-150">cloud_off</mat-icon>
+      </button>
+
+      <button class="button-white button-only-icon button-icon-2xl">
+        <mat-icon class="scale-150">mode_off_on</mat-icon>
+      </button>
+
+      <button class="button-black button-only-icon button-icon-2xl">
+        <mat-icon class="scale-150">cloud_off</mat-icon>
+      </button>
+
+      <button class="button-only-icon button-icon-2xl">
+        <mat-icon class="scale-150">menu</mat-icon>
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- .button -->
+  <section class="mb-16">
+
+    <div class="flex flex-col my-4">
+      <span class="text-xl font-bold text-gray-500 dark:text-gray-500">.button</span>
+      <small class="text-gray-800 opacity-50 dark:text-white">Classe para botão padrão.</small>
+    </div>
+
+    <span class="opacity-40">xs</span>
+    <div class="grid grid-cols-5 gap-4 mb-5 md:grid-cols-5">
+      <button type="button" class="button button-primary button-xs">Primary</button>
+      <button type="button" class="button button-secondary button-xs">Secondary</button>
+      <button type="button" class="button button-danger button-xs">Danger</button>
+      <button type="button" class="button button-success button-xs">Success</button>
+      <button type="button" class="button button-info button-xs">Info</button>
+      <button type="button" class="button button-warning button-xs">Warning</button>
+      <button type="button" class="button button-white button-xs">White</button>
+      <button type="button" class="button button-black button-xs">Black</button>
+      <button type="button" class="button button-xs">Default</button>
+    </div>
+
+    <span class="opacity-40">sm</span>
+    <div class="grid grid-cols-5 gap-4 mb-5 md:grid-cols-5">
+      <button type="button" class="button button-primary button-sm">Primary</button>
+      <button type="button" class="button button-secondary button-sm">Secondary</button>
+      <button type="button" class="button button-danger button-sm">Danger</button>
+      <button type="button" class="button button-success button-sm">Success</button>
+      <button type="button" class="button button-info button-sm">Info</button>
+      <button type="button" class="button button-warning button-sm">Warning</button>
+      <button type="button" class="button button-white button-sm">White</button>
+      <button type="button" class="button button-black button-sm">Black</button>
+      <button type="button" class="button button-sm">Default</button>
+    </div>
+
+    <span class="opacity-40">md</span>
+    <div class="grid grid-cols-5 gap-4 mb-5 md:grid-cols-5">
+      <button type="button" class="button button-primary">Primary</button>
+      <button type="button" class="button button-secondary">Secondary</button>
+      <button type="button" class="button button-danger">Danger</button>
+      <button type="button" class="button button-success">Success</button>
+      <button type="button" class="button button-info">Info</button>
+      <button type="button" class="button button-warning">Warning</button>
+      <button type="button" class="button button-white">White</button>
+      <button type="button" class="button button-black">Black</button>
+      <button type="button" class="button">Default</button>
+    </div>
+
+    <span class="opacity-40">lg</span>
+    <div class="grid grid-cols-5 gap-4 mb-5 md:grid-cols-5">
+      <button type="button" class="button button-primary button-lg">Primary</button>
+      <button type="button" class="button button-secondary button-lg">Secondary</button>
+      <button type="button" class="button button-danger button-lg">Danger</button>
+      <button type="button" class="button button-success button-lg">Success</button>
+      <button type="button" class="button button-info button-lg">Info</button>
+      <button type="button" class="button button-warning button-lg">Warning</button>
+      <button type="button" class="button button-white button-lg">White</button>
+      <button type="button" class="button button-black button-lg">Black</button>
+      <button type="button" class="button button-lg">Default</button>
+    </div>
+
+    <span class="opacity-40">xl</span>
+    <div class="grid grid-cols-5 gap-4 mb-5 md:grid-cols-8">
+      <button type="button" class="button button-primary button-xl">Primary</button>
+      <button type="button" class="button button-secondary button-xl">Secondary</button>
+      <button type="button" class="button button-danger button-xl">Danger</button>
+      <button type="button" class="button button-success button-xl">Success</button>
+      <button type="button" class="button button-info button-xl">Info</button>
+      <button type="button" class="button button-warning button-xl">Warning</button>
+      <button type="button" class="button button-white button-xl">White</button>
+      <button type="button" class="button button-black button-xl">Black</button>
+      <button type="button" class="button button-xl">Default</button>
+    </div>
+
+    <span class="opacity-40">2xl</span>
+    <div class="grid grid-cols-5 gap-4 mb-5 md:grid-cols-5">
+      <button type="button" class="button button-primary button-2xl">Primary</button>
+      <button type="button" class="button button-secondary button-2xl">Secondary</button>
+      <button type="button" class="button button-danger button-2xl">Danger</button>
+      <button type="button" class="button button-success button-2xl">Success</button>
+      <button type="button" class="button button-info button-2xl">Info</button>
+      <button type="button" class="button button-warning button-2xl">Warning</button>
+      <button type="button" class="button button-white button-2xl">White</button>
+      <button type="button" class="button button-black button-2xl">Black</button>
+      <button type="button" class="button button-2xl">Default</button>
+    </div>
+
+  </section>
+
+  <!-- .button-soft -->
+  <section class="mb-16">
+    <div class="flex flex-col my-4">
+      <span class="text-xl font-bold text-gray-500 dark:text-gray-500">.button.button-soft</span>
+      <small class="text-gray-800 opacity-50 dark:text-white">Classe para botão padrão.</small>
+    </div>
+    <div class="grid grid-cols-4 gap-4 md:grid-cols-10">
+      <button type="button" class="button button-soft-primary">Primary</button>
+      <button type="button" class="button button-soft-secondary">Secondary</button>
+      <button type="button" class="button button-soft-danger">Danger</button>
+      <button type="button" class="button button-soft-success">Success</button>
+      <button type="button" class="button button-soft-info">Info</button>
+      <button type="button" class="button button-soft-warning">Warning</button>
+      <button type="button" class="button button-soft-white">White</button>
+      <button type="button" class="button button-soft-black">Black</button>
+      <button type="button" class="button">Default</button>
+
+
+    </div>
+  </section>
+</div>

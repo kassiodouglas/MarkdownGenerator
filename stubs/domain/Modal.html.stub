@@ -1,0 +1,13 @@
+<Modal>
+
+  <div header>
+    <h3 class="font-bold">Titulo {{ name }}</h3>
+  </div>
+  <div body>
+    ...
+  </div>
+  <div footer>
+    <button class="btn-md-primary" (click)="modalService.destroy()">Fechar</button>
+  </div>
+
+</Modal>

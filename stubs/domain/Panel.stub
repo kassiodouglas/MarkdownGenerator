@@ -1,0 +1,18 @@
+import { Component, inject } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { PanelService } from '@src/app/shared/components/panel/services/panel.service';
+import { PanelModule } from '@src/app/shared/components/panel/panel.module';
+
+@Component({
+  selector: 'panel-{{ kebab }}',
+  imports: [
+    CommonModule,
+    PanelModule
+  ],
+  templateUrl: './{{ kebab }}.panel.html',
+})
+export class {{ name }}Panel {
+
+  public panelService = inject(PanelService);
+
+}

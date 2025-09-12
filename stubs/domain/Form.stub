@@ -1,0 +1,65 @@
+import { Injectable, inject } from '@angular/core';
+import { {{ name }}Api } from '../Apis/{{ kebab }}.api';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormControlLabeled } from '@src/app/shared/components/formulary_old/validation/FormControlLabeled';
+import { NotifyService } from '@src/app/shared/services/notiflix/notify.service';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class {{ name }}Form {
+
+  // Injections
+  private notifyService = inject(NotifyService);
+  private fb = inject(FormBuilder);
+  private api = inject({{ name }}Api);
+
+
+  public form!: FormGroup;
+  public mode: 'create' | 'update' = 'create';
+  public updateId: string | number | null = null;
+
+  constructor() { this.create(); }
+
+  public create(): void {
+    this.form = this.fb.group({
+      field: new FormControlLabeled('Label', '', [Validators.required]),
+    });
+  }
+
+  public populate(data:any){
+    this.form.patchValue({
+      field: data.field,
+    })
+  }
+
+  public submit(): void {
+
+    if(this.invalid){
+      this.notifyService.warning('Formulário inválido. Verique os campos destacados.');
+      this.form.markAllAsTouched();
+      return;
+    }
+
+    console.log('{{ name }}Form submit!', this.values)
+    this.notifyService.warning('Formulário Enviado!');
+
+  }
+
+  public reset(): void {
+    return this.form.reset();
+  }
+
+  public get values(): any {
+    return this.form.value;
+  }
+
+  public get valid(): boolean {
+    return this.form.valid;
+  }
+
+  public get invalid(): boolean {
+    return this.form.invalid;
+  }
+
+}
