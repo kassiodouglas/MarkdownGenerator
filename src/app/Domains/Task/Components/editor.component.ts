@@ -1,11 +1,12 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { TextFieldModule } from '@angular/cdk/text-field';
 
 @Component({
   selector: 'comp-editor',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, TextFieldModule],
   template: `
 <div class="bg-gray-800 p-6 rounded-2xl shadow-lg overflow-y-auto">
   <h2 class="text-2xl font-bold mb-6 text-white">✍️ Editor do Modelo</h2>
@@ -59,12 +60,15 @@ import { FormsModule } from '@angular/forms';
       class="flex items-start space-x-2 bg-zinc-700 p-2 rounded-lg mb-2"
     >
     <div class="w-full ">
-      <div class="w-full ">Anexo {{i+1}}</div>
+      <div class="w-full border-b border-zinc-500 mb-3 py-3 text-lg font-bold">Anexo {{i+1}}</div>
+
       <textarea
+        cdkTextareaAutosize
+        [cdkAutosizeMinRows]="2"
+        [cdkAutosizeMaxRows]="10"
         [ngModel]="anexo"
         (ngModelChange)="updateAnexo(i, $event)"
-        rows="2"
-        class="flex-1 bg-zinc-700 text-white w-full"
+        class="flex-1 bg-zinc-700 text-white w-full resize-none"
       ></textarea>
       </div>
       <button (click)="removeAnexo(i)" class="text-red-500">❌</button>

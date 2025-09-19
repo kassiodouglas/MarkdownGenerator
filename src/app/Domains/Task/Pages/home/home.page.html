@@ -10,11 +10,11 @@
   </comp-page-title>
 
 
-  <div class="flex flex-col justify-center w-full space-y-3 md:space-y-0 md:justify-between md:space-x-3 md:flex-row">
-    <div class="md:w-1/2">
+  <div class="flex flex-col justify-center w-full mb-16 space-y-3 md:space-y-0 md:justify-between md:space-x-3 md:flex-row">
+    <div class="md:w-1/2 h-[100vh] overflow-auto">
       <comp-editor (markdownChange)="onMarkdownChange($event)"></comp-editor>
     </div>
-    <div class="md:w-1/2">
+    <div class="md:w-1/2 h-[100vh]  overflow-auto">
       <comp-preview [markdown]="markdown"></comp-preview>
     </div>
   </div>
