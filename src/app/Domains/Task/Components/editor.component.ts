@@ -58,12 +58,15 @@ import { FormsModule } from '@angular/forms';
       *ngFor="let anexo of anexos; let i = index; trackBy: trackByIndex"
       class="flex items-start space-x-2 bg-zinc-700 p-2 rounded-lg mb-2"
     >
+    <div class="w-full ">
+      <div class="w-full ">Anexo {{i+1}}</div>
       <textarea
         [ngModel]="anexo"
         (ngModelChange)="updateAnexo(i, $event)"
         rows="2"
-        class="flex-1 bg-zinc-700 text-white"
+        class="flex-1 bg-zinc-700 text-white w-full"
       ></textarea>
+      </div>
       <button (click)="removeAnexo(i)" class="text-red-500">❌</button>
     </div>
     <button
